@@ -1,0 +1,103 @@
+header {
+    height: 75px;
+    line-height: 75px;
+    background: #222222;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+
+}
+
+.header-right {
+    display: flex;
+}
+
+.banner {
+    width: 100%;
+    /*ширина фона на весь экран*/
+    min-height: 764px;
+    /*высота фона не меньше высоты баннера*/
+    background-color: #F1E4E6;
+    /*цвет фона из макета*/
+    background-image: url(img/banner.png);
+    /*фото баннера из макета*/
+    background-repeat: no-repeat;
+    /*фото без повтора*/
+    /* background-size: contain; */
+    background-position: bottom left 135px;
+    /*равнение от низа и слева, подгонка в отладчике*/
+    display: flex;
+    /*чтобы сработал align-items*/
+    align-items: center;
+    /*размещение блока вертикально по центру*/
+}
+
+.banner-wrp {
+    width: 377px;
+    /*ширина из макета*/
+    margin: 0 0 0 892px;
+    text-transform: uppercase;
+    /*все буквы заглавные*/
+    position: relative;
+    /*для позиционирования вертикальной черточки*/
+    display: flex;
+    /*отображаем в виде блока*/
+    flex-direction: column;
+    /*перенос нижней части текста на новую строку*/
+}
+
+.banner-wrp::before {
+    /*создаёт псевдоэлемент*/
+    content: "";
+    /*отображение нового содержимого*/
+    /* display: block; */
+    width: 12px;
+    /*ширина из макета*/
+    height: 92px;
+    /*высота из макета*/
+    background-color: #F16D7F;
+    /*цвет фона вертикальной черты из макета*/
+    position: absolute;
+    /*чтобы сработало позиционирование*/
+    top: 0;
+    /*от низа не отступал*/
+    left: -28px;
+    /*в отладчике подобрал размер до надписи 16px*/
+}
+
+.banner-title {
+    line-height: 57.6px;
+    /*из макета - величина пространства между строками*/
+    font-weight: 900;
+    /*из макета - начертание шрифта*/
+    font-size: 48px;
+    /*из макета - размер шрифта*/
+    color: #222222;
+    /*цвет шрифта из макета*/
+    display: block;
+    width: 100%;
+
+
+
+
+}
+
+.banner-subtitle {
+    line-height: 38.4px;
+    font-weight: 700;
+    font-size: 32px;
+    display: block;
+}
+
+em {
+    font-style: normal;
+    color: #F16D7F;
+}
