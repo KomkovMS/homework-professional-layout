@@ -972,4 +972,192 @@ ol {
     padding: 0 6px;
 }
 
-/***********************slaider***********************/
+/***********************carousel***********************/
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 777px;
+    background-color: #F7F7F7;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 777px
+}
+
+.carousel-open:checked+.carousel-item {
+    position: static;
+    opacity: 100;
+    height: 777px
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+
+}
+
+.carousel-item img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    height: 724px;
+}
+
+.carousel-item img {
+    height: 724px;
+    width: 597px;
+}
+
+.carousel-control {
+    background: #d8d8d8;
+    color: #393939;
+    cursor: pointer;
+    display: block;
+    font-size: 31px;
+    height: 47px;
+    width: 47px;
+    line-height: 47px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 0%;
+}
+
+.carousel-control.next {
+    right: 0%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #f3be81;
+}
+
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2,
+#carousel-3:checked~.control-3 {
+    display: block;
+}
+
+// .carousel-indicators {
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+//     position: absolute;
+//     bottom: 2%;
+//     left: 0;
+//     right: 0;
+//     text-align: center;
+//     z-index: 10;
+// }
+
+// .carousel-indicators li {
+//     display: inline-block;
+//     margin: 0 5px;
+// }
+
+// .carousel-bullet {
+//     color: #393939;
+//     cursor: pointer;
+//     display: block;
+//     font-size: 35px;
+// }
+
+// .carousel-bullet:hover {
+//     color: #fff;
+// }
+
+#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #f3be81;
+}
+
+
+
+
+
+
+
+// .carousel {
+//     height: 777px;
+//     background-color: #F7F7F7;
+// }
+
+// .d-block {
+//     display: block !important;
+//     margin: 0 auto;
+// }
+
+// .carousel-control-prev-icon,
+// .carousel-control-next-icon {
+//     width: 47px;
+//     height: 47px;
+//     background-color: #d8d8d8;
+//     margin: 0;
+// }
+
+
+// .carousel-control-next,
+// .carousel-control-prev {
+//     justify-content: center !important;
+//     width: 2%;
+//     opacity: 1;
+// }
+
+// .carousel-dark .carousel-control-next-icon,
+// .carousel-dark .carousel-control-prev-icon {
+//     fill: rgba(42, 42, 42, 0.15);
+//     width: 47px;
+//     height: 47px;
+
+// }
+
+
+// .new-arrivals-slide {
+//     background-color: #ccc;
+
+// }
+
+
+// .corousel {}
+
+// .carousel-inner {
+//     margin: 0 auto;
+// }
+
+// .carousel-item {
+//     margin: 0 auto;
+// }
+
+// .img-carousel-item {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .carousel-item {}
+
+// .d-block {
+//     width: 597px;
+//     height: 724px;
+// }
+
+// .carousel-control-prev-icon,
+// .carousel-control-next-icon {
+//     width: 47px;
+//     height: 47px;
+//     background-color: rgba(42, 42, 42, 0.15);
+// }
