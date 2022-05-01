@@ -1096,21 +1096,18 @@ ol {
 /***********************carousel***********************/
 .carousel {
   position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 777px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 
 .carousel-inner {
   width: 100%;
   height: 777px;
+  overflow: hidden;
 }
 
 .carousel-open:checked + .carousel-item {
   position: static;
   opacity: 100;
-  height: 777px;
 }
 
 .carousel-item {
@@ -1123,9 +1120,7 @@ ol {
 .carousel-item img {
   display: block;
   margin: 0 auto;
-  height: auto;
   max-width: 100%;
-  height: 724px;
 }
 
 .carousel-item img {
@@ -1137,7 +1132,7 @@ ol {
   background: #d8d8d8;
   color: #393939;
   cursor: pointer;
-  display: block;
+  display: none;
   font-size: 31px;
   height: 47px;
   width: 47px;
@@ -1145,7 +1140,6 @@ ol {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
-  cursor: pointer;
   transform: translate(0, -50%);
   text-align: center;
   z-index: 10;
@@ -1160,14 +1154,46 @@ ol {
 }
 
 .carousel-control:hover {
-  background: rgba(0, 0, 0, 0.8);
-  color: #f3be81;
+  color: #f16d7f;
+}
+
+.carousel-control:active {
+  background: #222222;
+  color: #f16d7f;
 }
 
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,
 #carousel-3:checked ~ .control-3 {
   display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-bullet {
+  color: #393939;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.carousel-bullet:hover {
+  color: #fff;
 }
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
