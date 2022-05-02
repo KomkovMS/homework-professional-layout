@@ -1168,37 +1168,59 @@ ol {
   display: block;
 }
 
-.carousel-indicators {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.carousel {
+  margin-bottom: 664px;
+}
+
+.carousel-item-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  min-height: 601px;
+  width: 100%;
+  outline: 1px solid red;
   position: absolute;
-  bottom: 2%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 10;
+  bottom: calc(-602+64);
+  left: calc(width / 2);
+  z-index: 10px;
+  background-color: #ffffff;
 }
 
-.carousel-indicators li {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.carousel-bullet {
-  color: #393939;
-  cursor: pointer;
+.carousel-item-wrp::before {
+  content: "";
   display: block;
-  font-size: 35px;
+  width: 63px;
+  height: 3px;
+  background-color: #ef5b70;
+  position: absolute;
+  top: 93px;
+  left: calc(width/2);
 }
 
-.carousel-bullet:hover {
-  color: #fff;
+.carousel-item-link {
+  text-decoration: none;
+  margin-top: 65.5px;
 }
 
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-  color: #f3be81;
+.carousel-item-title {
+  display: block;
+  text-transform: uppercase;
+  color: #f16d7f;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16.8px;
 }
 /*# sourceMappingURL=style.css.map */

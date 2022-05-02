@@ -1052,112 +1052,57 @@ ol {
     display: block;
 }
 
-.carousel-indicators {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+// *****************WOMEN COLLECTION****************
+
+.carousel {
+    margin-bottom: 664px;
+}
+
+
+
+.carousel-item-wrp {
+    display: flex;
+    // justify-content: center;
+    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: stretch;
+    min-height: 601px;
+    width: 100%;
+    outline: 1px solid red;
     position: absolute;
-    bottom: 2%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
+    bottom: calc(-602+64);
+    left: calc(width / 2);
+    z-index: 10px;
+    background-color: #ffffff;
+
+
 }
 
-.carousel-indicators li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.carousel-bullet {
-    color: #393939;
-    cursor: pointer;
+.carousel-item-wrp::before {
+    content: "";
     display: block;
-    font-size: 35px;
+    width: 63px;
+    height: 3px;
+    background-color: #ef5b70;
+    position: absolute;
+    top: 93px;
+    ;
+    left: calc(width/2);
 }
 
-.carousel-bullet:hover {
-    color: #fff;
+.carousel-item-link {
+    // display: block;
+    text-decoration: none;
+    margin-top: 65.5px;
 }
 
-#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: #f3be81;
+.carousel-item-title {
+    display: block;
+    text-transform: uppercase;
+    color: #f16d7f;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16.8px;
 }
-
-
-
-
-
-
-
-// .carousel {
-//     height: 777px;
-//     background-color: #F7F7F7;
-// }
-
-// .d-block {
-//     display: block !important;
-//     margin: 0 auto;
-// }
-
-// .carousel-control-prev-icon,
-// .carousel-control-next-icon {
-//     width: 47px;
-//     height: 47px;
-//     background-color: #d8d8d8;
-//     margin: 0;
-// }
-
-
-// .carousel-control-next,
-// .carousel-control-prev {
-//     justify-content: center !important;
-//     width: 2%;
-//     opacity: 1;
-// }
-
-// .carousel-dark .carousel-control-next-icon,
-// .carousel-dark .carousel-control-prev-icon {
-//     fill: rgba(42, 42, 42, 0.15);
-//     width: 47px;
-//     height: 47px;
-
-// }
-
-
-// .new-arrivals-slide {
-//     background-color: #ccc;
-
-// }
-
-
-// .corousel {}
-
-// .carousel-inner {
-//     margin: 0 auto;
-// }
-
-// .carousel-item {
-//     margin: 0 auto;
-// }
-
-// .img-carousel-item {
-//     display: flex;
-//     justify-content: center;
-// }
-
-// .carousel-item {}
-
-// .d-block {
-//     width: 597px;
-//     height: 724px;
-// }
-
-// .carousel-control-prev-icon,
-// .carousel-control-next-icon {
-//     width: 47px;
-//     height: 47px;
-//     background-color: rgba(42, 42, 42, 0.15);
-// }
