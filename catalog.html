@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/83735b112f.js" crossorigin="anonymous"></script>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -141,98 +141,83 @@
                 </div>
             </section>
         </div>
-
-        <div class="filter ">
-            <div class="filter-wrp center">
-                <details>
-                    <summary><span class="filter-name">filter</span></summary>
-
-                    <form action="">
-                        <fieldset ca>
-                            <legend><span class="filter-name-two">filter</span></legend>
-                        </fieldset>
-                        <details open>
-                            <summary><span class="filter-name-list">categories</span></summary>
-                            <ul class="filter-menu">
-                                <li>Accessories</li>
-                                <li>Bags</li>
-                                <li>Denim</li>
-                                <li>Hoodies & Sweatshirts</li>
-                                <li>Jackets & Coats</li>
-                                <li>Polos</li>
-                                <li>Shirts</li>
-                                <li>Shoes</li>
-                                <li>Sweaters & Knits</li>
-                                <li>T-Shirts</li>
-                                <li>Tanks</li>
-                            </ul>
-                        </details>
-                        <details>
-                            <summary><span class="filter-name-list">brand</span></summary>
-                        </details>
-                        <details>
-                            <summary><span class="filter-name-list">designer</span></summary>
-                        </details>
-                    </form>
-                </details>
-            </div>
-            <div class="filter-box center">
-                <details>
-                    <summary><span class="title-size">trending now</span></summary>
-                    <form action="#">
-                        <fieldset>
-                            <legend></legend>
-                            <label for="xs" class="filter-txt">
-                                <input id="xs" type="checkbox" checked><span>trending-1</span></label>
-                            <label for="s">
-                                <input id="s" type="checkbox"><span>trending-2</span></label>
-                            <label for="m">
-                                <input id="m" type="checkbox"><span>trending-3</span></label>
-                            <label for="l">
-                                <input id="l" type="checkbox"><span>trending-4</span></label>
-                        </fieldset>
-                    </form>
-                </details>
-                <details>
-                    <summary><span class="title-size">size</span></summary>
-                    <form action="#">
-                        <fieldset>
-                            <legend></legend>
-                            <label for="xs">
-                                <input id="xs" type="checkbox" checked><span>xs</span></label>
-                            <label for="s">
-                                <input id="s" type="checkbox"><span>s</span></label>
-                            <label for="m">
-                                <input id="m" type="checkbox"><span>m</span></label>
-                            <label for="l">
-                                <input id="l" type="checkbox"><span>l</span></label>
-                        </fieldset>
-                    </form>
-                </details>
-
-                <details>
-                    <summary><span class="title-size">price</span></summary>
-                    <form action="#">
-                        <fieldset>
-                            <legend></legend>
-                            <label for="xst">
-                                <input id="xs" type="checkbox" checked><span>price-1</span></label>
-                            <label for="s">
-                                <input id="s" type="checkbox"><span>price-2</span></label>
-                            <label for="m">
-                                <input id="m" type="checkbox"><span>price-3</span></label>
-                            <label for="l">
-                                <input id="l" type="checkbox"><span>price-4</span></label>
-                        </fieldset>
-                    </form>
-                </details>
-            </div>
-        </div>
-
         <div class="content-products catalog-item">
             <section class="products center">
                 <div class="products-flex catalog-flex">
+                    <div class="product-nav">
+                        <div class="product-filter">
+                            <details>
+                                <summary>
+                                    <div class="filter">
+                                        <span class="nav-filter">filter</span>
+                                        <svg width="15" height="10" viewBox="0 0 15 10"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                                        </svg>
+                                    </div>
+                                </summary>
+                                <div class="filter-menu">
+                                    <details open>
+                                        <summary class="filter-section">
+                                            <span class="filter-section-title">category</span>
+                                        </summary>
+                                        <ul class="filter-list">
+                                            <li><button type="button">Accessories</button></li>
+                                            <li><button>Bags</button></li>
+                                            <li><button>Denim</button></li>
+                                            <li><button>Hoodies & Sweatshirts</button></li>
+                                            <li><button>Jackets & Coats</button></li>
+                                            <li><button>Polos</button></li>
+                                            <li><button>Shirts</button></li>
+                                            <li><button>Shoes</button></li>
+                                            <li><button>Sweaters & Knits</button></li>
+                                            <li><button>T-Shirts</button></li>
+                                            <li><button>Tanks</button></li>
+                                        </ul>
+                                    </details>
+                                    <details class="filter-menu">
+                                        <summary class="filter-section">
+                                            <span class="filter-section-title">brand</span>
+                                        </summary>
+                                        <ul class="filter-list">
+                                            <li><button class="filter-list-btn">Accessories</button></li>
+                                            <li>Bags</li>
+                                            <li>Denim</li>
+                                            <li>Hoodies & Sweatshirts</li>
+                                            <li>Jackets & Coats</li>
+                                            <li>Polos</li>
+                                            <li>Shirts</li>
+                                            <li>Shoes</li>
+                                            <li>Sweaters & Knits</li>
+                                            <li>T-Shirts</li>
+                                            <li>Tanks</li>
+                                        </ul>
+                                    </details>
+                                    <details class="filter-menu">
+                                        <summary class="filter-section"><span
+                                                class="filter-section-title">designer</span>
+                                        </summary>
+                                        <ul class="filter-list">
+                                            <li>Accessories</li>
+                                            <li>Bags</li>
+                                            <li>Denim</li>
+                                            <li>Hoodies & Sweatshirts</li>
+                                            <li>Jackets & Coats</li>
+                                            <li>Polos</li>
+                                            <li>Shirts</li>
+                                            <li>Shoes</li>
+                                            <li>Sweaters & Knits</li>
+                                            <li>T-Shirts</li>
+                                            <li>Tanks</li>
+                                        </ul>
+                                    </details>
 
+                                </div>
+
+                            </details>
+                        </div>
+                    </div>
 
                     <div class="products-flex-item item-prod item-catalog">
                         <a class="products-flex-item-link" href="#">
@@ -427,6 +412,42 @@
                 </div>
             </section>
         </div>
+        <div class="new-arrivals-breadcrumb breadcrumb-2">
+            <nav aria-label="new-arrivals-breadcrumb-nav">
+                <ol class="new-arrivals-breadcrumb-nav-ol center">
+                    <li class="new-arrivals-breadcrumb-item  new-arrivals-active"><svg width="9" height="14"
+                            viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black" />
+                        </svg><span>1</span>
+                    </li>
+                    <li class="new-arrivals-breadcrumb-item breadcrumb-3"><a class="new-arrivals-breadcrumb-item-link "
+                            href="#">2</a>
+                    </li>
+                    <li class="new-arrivals-breadcrumb-item breadcrumb-3"><a class="new-arrivals-breadcrumb-item-link"
+                            href="#">3</a>
+                    </li>
+                    <li class="new-arrivals-breadcrumb-item breadcrumb-3"><a class="new-arrivals-breadcrumb-item-link"
+                            href="#">4</a>
+                    </li>
+                    <li class="new-arrivals-breadcrumb-item breadcrumb-3"><a class="new-arrivals-breadcrumb-item-link"
+                            href="#">5</a>
+                    </li>
+                    <li class="new-arrivals-breadcrumb-item breadcrumb-3"><a class="new-arrivals-breadcrumb-item-link"
+                            href="#">6</a>
+                    </li>
+                    <li class="new-arrivals-breadcrumb-item breadcrumb-3"><a class="new-arrivals-breadcrumb-item-link"
+                            href="#">...</a>
+                    </li>
+                    <li class="new-arrivals-breadcrumb-i breadcrumb-3tem"><a class="new-arrivals-breadcrumb-item-link"
+                            href="#"><span>20</span><svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z"
+                                    fill="black" />
+                            </svg></a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
         <div class="content-subscrible">
             <section class="subscribe center">
                 <div class="subscribe-info">
@@ -510,4 +531,4 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script> -->
-</body>
+</body

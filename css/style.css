@@ -1089,17 +1089,22 @@ ol {
   color: #f16d7f;
 }
 
+.new-arrivals-breadcrumb-item + .new-arrivals-breadcrumb-item::before {
+  color: #6c757d;
+  padding: 0 23px;
+}
+
 .new-arrivals-active {
-  color: #f16d7f;
+  color: #EF5B70;
   font-weight: 700;
   font-size: 14px;
   line-height: 16.8px;
 }
 
-.new-arrivals-breadcrumb-item + .new-arrivals-breadcrumb-item::before {
-  color: #6c757d;
-  content: "/";
-  padding: 0 6px;
+.breadcrumb-3 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 44px;
 }
 
 /***********************carousel***********************/
@@ -1518,5 +1523,9 @@ summary::-webkit-details-marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.breadcrumb-2 {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
