@@ -562,6 +562,11 @@ body {
   margin: 0 0 128px 0;
 }
 
+/******************page product*********************/
+.item-catalog {
+  margin: 0 0 30px 0 !important;
+}
+
 /*****************the end page#2 products******************/
 .products-flex-item:hover {
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -1391,5 +1396,127 @@ summary::-webkit-details-marker {
   background-color: #ffffff;
   border: 1px solid #222222;
   color: #222222;
+}
+
+/***************page catalog**********************/
+.catalog-item {
+  margin-top: 133px;
+}
+
+.catalog-flex {
+  position: relative;
+}
+
+.product-nav {
+  width: 100%;
+  margin-bottom: 64px;
+  position: absolute;
+  top: -94px;
+  left: 1px;
+  z-index: 1;
+}
+
+.product-filter {
+  max-width: 360px;
+  min-height: 0;
+  border: 1px solid #ebebeb;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* .product-filter:activ {
+    width: 360px;
+    min-height: 531px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    
+  } */
+.filter,
+.filter-section,
+.filter-list {
+  margin-left: 33px;
+}
+
+.filter {
+  margin: 13px 0 16px 17px;
+}
+
+.filter-list li {
+  padding: 0 0 11px 0;
+}
+
+.filter-list li:last-child {
+  padding: 0 0 24px 0;
+}
+
+.nav-filter {
+  padding: 0 8px 0 0;
+}
+
+.filter-section {
+  margin: 0 15.5px 24.5px 17px;
+  position: relative;
+}
+
+.filter-section:nth-child(1) {
+  margin: 0 15.5px 18px 17px;
+}
+
+.filter-section:nth-child(1) {
+  margin: 0 15.5px 16.5px 17px;
+}
+
+.filter-section-title {
+  display: block;
+  line-height: 37px;
+  height: 37px;
+  border-left: 5px solid #EF5B70;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 0 15.5px 0 11px;
+}
+
+.filter-list li button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  border: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: none;
+}
+
+summary {
+  color: #000000;
+  display: block;
+  text-transform: uppercase;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.filter-list {
+  list-style-type: none;
+}
+
+.filter:hover,
+.filter:hover svg,
+.filter-section {
+  color: #EF5B70;
+  fill: #EF5B70;
+}
+
+.product-filter:hover .filter {
+  color: #EF5B70;
+  fill: #EF5B70;
+  visibility: visible;
+}
+
+.filter-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
