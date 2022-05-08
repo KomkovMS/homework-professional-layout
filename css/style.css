@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -1535,6 +1536,12 @@ summary::-webkit-details-marker {
 }
 
 .shopping-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 96px auto 128px;
 }
 
@@ -1548,6 +1555,10 @@ summary::-webkit-details-marker {
   max-width: 652px;
   width: 100%;
   min-height: 306px;
+}
+
+.shopping-cart-product:last-child {
+  margin: 0 0 72.5px 0;
 }
 
 .shopping-cart-info {
@@ -1566,6 +1577,7 @@ summary::-webkit-details-marker {
   margin: 22px 97px 42px 31px;
 }
 
+/*********SHOPPING CAR позиционирование кнопки close из меню для карточки товара********/
 .shopping-cart-close::before,
 .shopping-cart-close::after {
   position: absolute;
@@ -1573,6 +1585,7 @@ summary::-webkit-details-marker {
   left: 170px;
 }
 
+/***********SHOPPING CART список в карточке товара в корзине*************/
 .shopping-cart-info ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1648,5 +1661,204 @@ summary::-webkit-details-marker {
 
 .shopping-cart-info ul li span {
   color: #EF5B70;
+}
+
+/**********SHOPPING CART блок SHIPPING ADRESS************/
+.shopping-cart-form-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  margin-top: 18px;
+}
+
+.shopping-cart-form-header {
+  display: block;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin: 18px 0 20px 128px;
+}
+
+.input-cart-form {
+  padding: 13px 0 16px 17.24px;
+  border: 1px solid #a4a4a4;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 360px;
+  height: 45px;
+  margin: 0 0 20px 128px;
+}
+
+.form-other:last-child {
+  margin: 0 0 23px 128px;
+}
+
+.input-cart-form[type="text"]::-webkit-input-placeholder {
+  display: block;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.form-other[type="text"]::-webkit-input-placeholder {
+  color: #222222;
+}
+
+/***********SHOPPING CART кнопка get a quote**********/
+.input-cart-form-btn input {
+  text-transform: uppercase;
+  display: block;
+  width: 101.41px;
+  height: 35px;
+  margin: 0 0 57px 128px;
+  padding: 0 auto;
+  border: 1px solid #a4a4a4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 35px;
+  color: #4A4A4A;
+  background: #ffffff;
+}
+
+.input-cart-form-btn input:hover {
+  background: #ff6a6a;
+  color: #ffffff;
+}
+
+.input-cart-form-btn input:active {
+  background: #4A4A4A;
+  color: #ffffff;
+}
+
+/*************SHOPPING CART серый блок с кнопкой checkout**********/
+.checkout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 0 128px;
+  padding: 0 0 0 43px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 360px;
+  height: 214px;
+  background: #F5F3F3;
+}
+
+.checkout-subtitle {
+  display: block;
+  text-align: right;
+  margin: 39px 43px 12px 0;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  text-transform: uppercase;
+}
+
+.checkout-subtitle span {
+  padding: 0 0 0 26px;
+}
+
+.checkout-title {
+  display: block;
+  text-align: right;
+  margin: 0 43px 17px 0;
+  border-bottom: 1px solid #E2E2E2;
+  padding: 0 0 21px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.checkout-title span {
+  padding: 0 0 0 26px;
+  font-weight: 700;
+  color: #F16D7F;
+}
+
+/***************SHOPPING CART кнопка слева checkout*********/
+.checkout-btn {
+  width: 273px;
+  height: 50px;
+}
+
+.checkout-btn input {
+  display: block;
+  width: 273px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  border: none;
+}
+
+.checkout-btn input:hover {
+  color: #F16D7F;
+  background-color: #FFffff;
+  border: 1px solid #F16D7F;
+}
+
+.checkout-btn input:active {
+  color: #222222;
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+}
+
+/**********SHOPPING CART кнопки снизу**********/
+.shopping-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.clear-shoping-cart-btn,
+.continue-shopping-btn {
+  width: 234px;
+  height: 49px;
+}
+
+.clear-shoping-cart-btn > input,
+.continue-shopping-btn input {
+  display: block;
+  width: 234px;
+  height: 49px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border: 1px solid #a4a4a4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
