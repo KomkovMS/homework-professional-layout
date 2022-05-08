@@ -1861,4 +1861,117 @@ summary::-webkit-details-marker {
           box-sizing: border-box;
   background-color: #FFFFFF;
 }
+
+/***************Page Registration*******************/
+/*регнистрационная форма слева*/
+.registration-form {
+  max-width: 360px;
+  border: 1px solid red;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.first-name,
+.first-name-txt,
+.last-name,
+.last-name-txt,
+.gender,
+.e-mail,
+.e-mail-txt,
+.password,
+.password-txt,
+.psw-info {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.gender-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 31px 0 33px 0;
+}
+
+.male[type="radio"],
+.female[type="radio"] {
+  display: none;
+}
+
+.male-gender,
+.female-gender {
+  display: block;
+  margin-right: 20px;
+  padding: 0 0 0 27px;
+  height: 17px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 17px;
+  color: #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.male-gender::before,
+.female-gender::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #a4a4a4;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.male[type="radio"]:checked ~ .male-gender::before,
+.female[type="radio"]:checked ~ .female-gender::before {
+  background-color: #f1e4e6;
+}
+
+.registration-btn {
+  display: block;
+  position: relative;
+}
+
+.registration-btn input {
+  display: block;
+  text-align: left;
+  padding: 0 0 0 29px;
+  width: 167px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.reg-btn-svg {
+  position: absolute;
+  top: 20px;
+  left: 118px;
+  fill: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.registration-btn:hover svg {
+  fill: #F16D7F;
+}
+
+.registration-btn:active svg {
+  fill: #222222;
+}
 /*# sourceMappingURL=style.css.map */
