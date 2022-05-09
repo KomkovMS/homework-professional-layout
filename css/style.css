@@ -1059,6 +1059,7 @@ footer {
   line-height: 28.8px;
 }
 
+/******************/
 .new-arrivals-breadcrumb {
   margin: 0;
   padding: 0;
@@ -1106,6 +1107,79 @@ ol {
   font-weight: 300;
   font-size: 16px;
   line-height: 44px;
+}
+
+/*****************page catalog pagination-bottom************/
+.pagination {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination-bottom-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 284px;
+  height: 44px;
+  margin: 0 auto;
+  padding: 0 9px;
+  border: 1px solid #ebebeb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pagination-bottom-list-link {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #C4C4C4;
+}
+
+.pagination-bottom-list-link svg {
+  display: block;
+  fill: #000000;
+}
+
+.pagination-bottom-active {
+  color: #EF5B70;
+}
+
+.pagination-bottom-list-link svg:hover,
+.pagination-bottom-list-link:hover {
+  color: #EF5B70;
+  fill: #EF5B70;
+}
+
+.pagination-bottom-list-link svg:active,
+.pagination-bottom-list-link:active {
+  color: #000000;
+  fill: #000000;
 }
 
 /***********************carousel***********************/
@@ -1407,6 +1481,7 @@ summary::-webkit-details-marker {
 /***************page catalog**********************/
 .catalog-item {
   margin-top: 133px;
+  margin-bottom: 18px;
 }
 
 .catalog-flex {
