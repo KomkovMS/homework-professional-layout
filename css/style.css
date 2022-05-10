@@ -1506,7 +1506,7 @@ summary::-webkit-details-marker {
 .filter-nav {
   max-width: 360px;
   width: 100%;
-  border: 1px solid red;
+  padding: 13px 16px 0 17px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1522,6 +1522,7 @@ summary::-webkit-details-marker {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 0 16px 0;
 }
 
 .filter-title {
@@ -1530,11 +1531,6 @@ summary::-webkit-details-marker {
   font-size: 14px;
   line-height: 17px;
   margin: 0 11px 0 0;
-}
-
-.filter-nav-header:hover {
-  color: #EF5B70;
-  fill: #EF5B70;
 }
 
 .filter-nav:hover {
@@ -1549,6 +1545,9 @@ summary::-webkit-details-marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid blue;
   margin: 0 0 0 30px;
   -webkit-box-sizing: border-box;
@@ -1572,6 +1571,68 @@ summary::-webkit-details-marker {
 
 .filter-list {
   list-style-type: none;
+}
+
+.filter-list-item {
+  margin: 0 0 11px 0;
+}
+
+.filter-list-link {
+  list-style-type: none;
+  display: block;
+}
+
+.filter-list-item:last-child {
+  list-style-type: none;
+  display: block;
+  margin: 0 0 24px 0;
+}
+
+.filter-subtitle {
+  display: block;
+  height: 37px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 37px;
+  color: #6F6E6E;
+  position: relative;
+  border-left: 5px solid #EF5B70;
+  border-bottom: 1px solid #ebebeb;
+  margin: 0 0 24px 0;
+  padding: 0 0 0 11px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.filter-nav-submenu:last-child {
+  margin: 0 0 16px 0;
+}
+
+.filter-nav-submenu:last-child {
+  margin: 0;
+}
+
+.filter-subtitle::after {
+  content: "";
+  display: block;
+}
+
+.filter-subtitle:not(.collapsed):hover {
+  color: #EF5B70;
+}
+
+.filter-subtitle:focus {
+  color: #EF5B70;
+}
+
+.filter-nav-header:hover {
+  color: #EF5B70;
+  fill: #EF5B70;
+}
+
+.filter-nav-header:focus {
+  color: #EF5B70;
+  fill: #EF5B70;
 }
 
 .filter-list a {
