@@ -285,16 +285,34 @@ body {
 }
 
 .account-icon-btn {
+    display: flex;
     width: 29px;
-    height: 29px;
+    min-height: 29px;
     margin: 26px 33px 20px 0;
 }
 
+.account-icon-btn svg {
+    margin: auto;
+}
+
+.account-icon-btn svg:hover {
+    fill: #f16d7f;
+}
+
 .cart-btn {
+    display: flex;
     width: 32px;
     height: 29px;
     margin: 26px 0 20px 0;
     position: relative;
+}
+
+.cart-btn svg {
+    margin: auto;
+}
+
+.cart-btn svg:hover {
+    fill: #f16d7f;
 }
 
 .cart-btn span {
@@ -623,18 +641,23 @@ body {
 }
 
 .products-btn {
-    display: block;
+    display: flex;
     margin: 0 auto;
     width: 212px;
-    height: 48px;
-    line-height: 48px;
+    min-height: 48px;
     background-color: #ffffff;
     border: 1px solid #ff6a6a;
-    box-sizing: border-box;
     color: #f26376;
     font-weight: 400;
     font-size: 16px;
     line-height: 19.2px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.products-btn-txt {
+    display: block;
+    margin: auto;
 }
 
 .products-btn:hover {
