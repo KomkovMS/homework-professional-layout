@@ -3,31 +3,23 @@ footer {
 }
 
 .page-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (space-between, center, nowrap, row, 0, 0 auto);
     width: 100%;
     min-height: 79px;
-    box-sizing: border-box;
 }
 
 .page-footer-txt {
-    display: block;
-    margin: 0;
+    @include block (0, 0);
     @include font-mix (400, 16px, 19.2px, capitalize, #fbfbfb);
 }
 
 .page-footer-socials {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (space-between, center, nowrap, row, 0, 0);
     width: 148px;
 }
 
 .page-footer-socials-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (center, center, nowrap, row, 0, 0);
     width: 32px;
     height: 32px;
     background-color: #ffffff;
