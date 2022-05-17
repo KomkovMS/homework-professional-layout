@@ -1134,6 +1134,15 @@ footer {
           box-sizing: border-box;
 }
 
+.catalog-item {
+  margin: 39px auto 18px;
+}
+
+.catalog-flex {
+  position: relative;
+}
+
+/**************catalog page filter**********/
 /*******************filter*******************/
 .product-nav {
   display: -webkit-box;
@@ -1143,31 +1152,30 @@ footer {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  text-transform: none;
   color: #000000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .product-nav-left {
-  width: 100%;
   max-width: 360px;
+  width: 100%;
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .filter-nav {
-  width: 100%;
   max-width: 360px;
+  width: 100%;
   padding: 13px 16px 0 17px;
-  background: #ffffff;
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   left: 0;
   top: 0;
   z-index: 1;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .filter-nav:focus-within {
@@ -1213,19 +1221,18 @@ summary::-webkit-details-marker {
 
 .filter-subtitle {
   display: block;
-  padding: 0 0 0 11px;
-  margin: 0 0 24px 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  height: 37px;
   font-weight: 400;
   font-size: 14px;
   line-height: 37px;
-  text-transform: uppercase;
-  color: #6f6e6e;
-  height: 37px;
+  color: #6F6E6E;
   position: relative;
-  border-left: 5px solid #ef5b70;
+  border-left: 5px solid #EF5B70;
   border-bottom: 1px solid #ebebeb;
+  margin: 0 0 24px 0;
+  padding: 0 0 0 11px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .filter-list {
@@ -1234,17 +1241,11 @@ summary::-webkit-details-marker {
 
 .filter-list a {
   display: block;
-  padding: 0;
-  margin: 0;
-  text-align: start;
   text-decoration: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  text-transform: capitalize;
-  color: #6f6e6e;
+  color: #6F6E6E;
 }
 
 .filter-list-item {
@@ -1262,21 +1263,20 @@ summary::-webkit-details-marker {
   display: block;
 }
 
-.filter-subtitle:not(.collapsed),
+.filter-subtitle:not(.collapsed) {
+  color: #EF5B70;
+}
+
 .filter-subtitle:focus {
-  color: #ef5b70;
+  color: #EF5B70;
 }
 
 .filter-nav-header:hover {
-  color: #ef5b70;
-  fill: #ef5b70;
+  color: #EF5B70;
+  fill: #EF5B70;
 }
 
 /***********************product-nav-right***************/
-.catalog-item {
-  margin: 39px auto 18px;
-}
-
 .product-nav-right-left,
 .product-nav-right-center,
 .product-nav-right-right {
@@ -1301,22 +1301,12 @@ summary::-webkit-details-marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .trending-nav-header {
@@ -1338,8 +1328,7 @@ summary::-webkit-details-marker {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  text-transform: uppercase;
-  color: #6f6e6e;
+  color: #6F6E6E;
 }
 
 .size-size,
@@ -1377,7 +1366,7 @@ summary::-webkit-details-marker {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #6f6e6e;
+  color: #6F6E6E;
 }
 
 .product-marker-xs,
@@ -1404,11 +1393,10 @@ summary::-webkit-details-marker {
 
 .product-nav-right-box {
   display: block;
-  padding: 0;
   margin: 0 0 10px 31px;
+  height: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 16px;
   position: relative;
 }
 
@@ -1432,7 +1420,7 @@ summary::-webkit-details-marker {
   display: block;
   width: 12px;
   height: 12px;
-  border: 1px solid #ebebeb;
+  border: 1px solid #EBEBEB;
   position: absolute;
   top: 3px;
   left: -22px;
@@ -1452,11 +1440,11 @@ summary::-webkit-details-marker {
 .product-value-price-2[type="checkbox"]:checked ~ .product-marker-price-2::before,
 .product-value-price-3[type="checkbox"]:checked ~ .product-marker-price-3::before,
 .product-value-price-4[type="checkbox"]:checked ~ .product-marker-price-4::before {
-  background-color: #f8f3f4;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   background-image: url(../img/klipartz.com.png);
+  background-color: #f8f3f4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   border-radius: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1465,13 +1453,8 @@ summary::-webkit-details-marker {
 .trending-nav-header-title:hover,
 .size-nav-header-title:hover,
 .price-nav-header-title:hover {
-  color: #ef5b70;
-  fill: #ef5b70;
-}
-
-/***********add cart***********/
-.catalog-flex {
-  position: relative;
+  color: #EF5B70;
+  fill: #EF5B70;
 }
 
 .item-catalog {
@@ -1631,6 +1614,16 @@ summary::-webkit-details-marker {
   color: #f16d7f;
 }
 
+.item-prod {
+  margin: 0 0 128px 0;
+}
+
+/*****************page#2 products******************/
+/******************page product*********************/
+/*****************the end page#2 products******************/
+/******************advantage*******************/
+/*****************page#2 products******************/
+/*****************new-arrivals******************/
 /***********************carousel***********************/
 .carousel {
   position: relative;
@@ -1661,10 +1654,8 @@ summary::-webkit-details-marker {
 
 .carousel-item img {
   display: block;
-  padding: 0;
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  max-width: 100%;
 }
 
 .carousel-item img {
@@ -1673,26 +1664,19 @@ summary::-webkit-details-marker {
 }
 
 .carousel-control {
-  display: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-weight: normal;
-  font-size: 31px;
-  line-height: 47px;
-  text-transform: none;
-  color: #393939;
   background: #d8d8d8;
+  color: #393939;
   cursor: pointer;
+  display: none;
+  font-size: 31px;
   height: 47px;
   width: 47px;
+  line-height: 47px;
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
+  text-align: center;
   z-index: 10;
 }
 
@@ -1735,22 +1719,13 @@ summary::-webkit-details-marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
   min-height: 601px;
@@ -1915,6 +1890,7 @@ summary::-webkit-details-marker {
   color: #ef5b70;
 }
 
+/*****************products-cart *************/
 .add-to-cart-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1936,7 +1912,6 @@ summary::-webkit-details-marker {
   line-height: 19.2px;
 }
 
-/****************btn**************/
 .add-to-cart-btn svg {
   margin: 0 23px 0 23.5px;
   fill: #ef5b70;
@@ -1963,11 +1938,8 @@ summary::-webkit-details-marker {
   color: #222222;
 }
 
-/*****************products-cart *************/
-.item-prod {
-  margin: 0 0 128px 0;
-}
-
+/***************page catalog**********************/
+/**************PAGE SHOPPING CART*************/
 .shopping__cart-header {
   line-height: 148px;
 }
@@ -2296,6 +2268,8 @@ summary::-webkit-details-marker {
   background-color: #FFFFFF;
 }
 
+/***************Page Registration*******************/
+/*регистрационная форма слева*/
 .registration {
   margin: 64px auto 96px;
 }
