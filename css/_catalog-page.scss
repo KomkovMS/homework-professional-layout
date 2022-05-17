@@ -1,42 +1,27 @@
-.catalog-item {
-    margin: 39px auto 18px;
-}
-
-.catalog-flex {
-    position: relative;
-}
-
-/**************catalog page filter**********/
-
 /*******************filter*******************/
 
 .product-nav {
     display: flex;
     margin: 0 auto 65px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
+    @include font-mix (600, 14px, 17px, none, #000000);
     box-sizing: border-box;
 }
 
 .product-nav-left {
-    max-width: 360px;
-    width: 100%;
+    @include size (360px);
     position: relative;
     box-sizing: border-box;
 }
 
 .filter-nav {
-    max-width: 360px;
-    width: 100%;
+    @include size (360px);
     padding: 13px 16px 0 17px;
-    background: #FFFFFF;
-    box-sizing: border-box;
+    background: #ffffff;
     position: absolute;
     left: 0;
     top: 0;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 .filter-nav:focus-within {
@@ -76,18 +61,12 @@ summary::-webkit-details-marker {
 }
 
 .filter-subtitle {
-    display: block;
+    @include block (0 0 0 11px, 0 0 24px 0);
+    @include font-mix (400, 14px, 37px, uppercase, #6f6e6e);
     height: 37px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 37px;
-    color: #6F6E6E;
     position: relative;
-    border-left: 5px solid #EF5B70;
+    border-left: 5px solid #ef5b70;
     border-bottom: 1px solid rgba(235, 235, 235, 1);
-    margin: 0 0 24px 0;
-    padding: 0 0 0 11px;
-    box-sizing: border-box;
 }
 
 .filter-list {
@@ -95,12 +74,8 @@ summary::-webkit-details-marker {
 }
 
 .filter-list a {
-    display: block;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
+    @include block-txt (block, 0, 0, start);
+    @include font-mix (400, 14px, 17px, capitalize, #6f6e6e);
 }
 
 .filter-list-item {
@@ -118,20 +93,21 @@ summary::-webkit-details-marker {
     display: block;
 }
 
-.filter-subtitle:not(.collapsed) {
-    color: #EF5B70;
-}
-
+.filter-subtitle:not(.collapsed),
 .filter-subtitle:focus {
-    color: #EF5B70;
+    color: #ef5b70;
 }
 
 .filter-nav-header:hover {
-    color: #EF5B70;
-    fill: #EF5B70;
+    color: #ef5b70;
+    fill: #ef5b70;
 }
 
 /***********************product-nav-right***************/
+
+.catalog-item {
+    margin: 39px auto 18px;
+}
 
 .product-nav-right-left,
 .product-nav-right-center,
@@ -154,9 +130,7 @@ summary::-webkit-details-marker {
 .trending-nav-header span,
 .size-nav-header span,
 .price-nav-header span {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex (space-between, center, nowrap, row, 0, 0);
 }
 
 .trending-nav-header {
@@ -175,10 +149,7 @@ summary::-webkit-details-marker {
 .size-nav-header-title,
 .price-nav-header-title {
     display: block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
+    @include font-mix (400, 14px, 17px, uppercase, #6f6e6e);
 }
 
 .size-size,
@@ -214,7 +185,7 @@ summary::-webkit-details-marker {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: #6F6E6E;
+    color: #6f6e6e;
 }
 
 .product-marker-xs,
@@ -240,10 +211,8 @@ summary::-webkit-details-marker {
 }
 
 .product-nav-right-box {
-    display: block;
-    margin: 0 0 10px 31px;
+    @include block (0, 0 0 10px 31px);
     height: 16px;
-    box-sizing: border-box;
     position: relative;
 }
 
@@ -267,7 +236,7 @@ summary::-webkit-details-marker {
     display: block;
     width: 12px;
     height: 12px;
-    border: 1px solid #EBEBEB;
+    border: 1px solid #ebebeb;
     position: absolute;
     top: 3px;
     left: -22px;
@@ -286,11 +255,8 @@ summary::-webkit-details-marker {
 .product-value-price-2[type="checkbox"]:checked~.product-marker-price-2::before,
 .product-value-price-3[type="checkbox"]:checked~.product-marker-price-3::before,
 .product-value-price-4[type="checkbox"]:checked~.product-marker-price-4::before {
+    @include bcg (#f8f3f4, contain);
     background-image: url(../img/klipartz.com.png);
-    background-color: #f8f3f4;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     border-radius: 50%;
     box-sizing: border-box;
 }
@@ -298,11 +264,15 @@ summary::-webkit-details-marker {
 .trending-nav-header-title:hover,
 .size-nav-header-title:hover,
 .price-nav-header-title:hover {
-    color: #EF5B70;
-    fill: #EF5B70;
+    color: #ef5b70;
+    fill: #ef5b70;
 }
 
+/***********add cart***********/
 
+.catalog-flex {
+    position: relative;
+}
 
 .item-catalog {
     margin: 0 0 30px 0 !important;
