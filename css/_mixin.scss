@@ -1,0 +1,52 @@
+@mixin font-mix($fw, $fs, $lh, $tt, $txt-color) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    text-transform: $tt;
+    color: $txt-color;
+}
+
+@mixin flex($jc, $ai, $fw, $fd, $p, $m) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+    flex-direction: $fd;
+    padding: $p;
+    margin: $m;
+    box-sizing: border-box;
+}
+
+@mixin block($p, $m) {
+    display: block;
+    padding: $p;
+    margin: $m;
+    box-sizing: border-box;
+}
+
+@mixin block-txt($d, $p, $m, $ta) {
+    display: $d;
+    padding: $p;
+    margin: $m;
+    text-align: $ta;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@mixin size($mw) {
+    width: 100%;
+    max-width: $mw;
+}
+
+@mixin brd($bd, $br) {
+    border: $bd;
+    border-radius: $br;
+    box-sizing: border-box;
+}
+
+@mixin bcg($bcg-c, $bcg-s) {
+    background-color: $bcg-c;
+    background-size: $bcg-s;
+    background-position: center;
+    background-repeat: no-repeat;
+}

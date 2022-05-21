@@ -1,0 +1,28 @@
+.content-advantage {
+    background-color: #222224;
+}
+
+.advantage {
+    @include flex (space-between, center, nowrap, row, 0, 95px auto 0 auto);
+    min-height: 341px;
+    box-sizing: border-box;
+}
+
+.advantage-item {
+    @include flex (space-between, center, wrap, column, 0, 0);
+    @include size (300px);
+}
+
+.advantage-item-icon {
+    @include block (0, 0 0 28px 0);
+}
+
+.advantage-item-title {
+    @include block-txt (block, 0, 0 0 16px 0, center);
+    @include font-mix (400, 19.96px, 23.95px, capitalize, #fbfbfb);
+}
+
+.advantage-item-txt {
+    text-align: center;
+    @include font-mix (300, 13.97px, 17px, none, #fbfbfb);
+}

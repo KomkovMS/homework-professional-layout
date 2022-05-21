@@ -1,0 +1,41 @@
+.content-arrivals {
+    display: flex;
+    align-items: center;
+    background-color: #f8f3f4;
+    min-height: 148px;
+}
+
+.new-arrivals {
+    @include flex (space-between, center, nowrap, row, 0, 0 auto);
+}
+
+.new-arrivals-header {
+    @include font-mix (400, 24px, 28.8px, uppercase, #f16d7f);
+}
+
+.new-arrivals-breadcrumb-nav-ol {
+    display: flex;
+    align-items: center;
+}
+
+.new-arrivals-breadcrumb-nav-ol li {
+    list-style-type: none;
+    margin: 0 5px 0 0;
+}
+
+.new-arrivals-breadcrumb-nav-ol span {
+    color: #636363;
+}
+
+.new-arrivals-breadcrumb-item-link {
+    text-decoration: none;
+    @include font-mix (300, 14px, 16.8px, uppercase, #636363);
+}
+
+.new-arrivals-breadcrumb-item-link:hover {
+    color: #f16d7f;
+}
+
+.new-arrivals-active {
+    @include font-mix (700, 14px, 16.8px, uppercase, #f16d7f);
+}

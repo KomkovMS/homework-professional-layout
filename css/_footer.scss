@@ -1,0 +1,42 @@
+footer {
+    background-color: #222224;
+}
+
+.page-footer {
+    @include flex (space-between, center, nowrap, row, 0, 0 auto);
+    width: 100%;
+    min-height: 79px;
+}
+
+.page-footer-txt {
+    @include block (0, 0);
+    @include font-mix (400, 16px, 19.2px, capitalize, #fbfbfb);
+}
+
+.page-footer-socials {
+    @include flex (space-between, center, nowrap, row, 0, 0);
+    width: 148px;
+}
+
+.page-footer-socials-item {
+    @include flex (center, center, nowrap, row, 0, 0);
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+}
+
+.page-footer-socials-item svg {
+    fill: #000000;
+}
+
+.page-footer-socials-item:hover svg {
+    fill: #f16d7f;
+}
+
+.page-footer-socials-item:active {
+    background-color: #f16d7f;
+}
+
+.page-footer-socials-item:active svg {
+    fill: #ffffff;
+}

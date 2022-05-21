@@ -1,0 +1,88 @@
+.content-subscrible {
+    background-image: url(../img/photo-subscribe_1.png);
+    @include bcg (rgba(244, 244, 244, 0.7), cover);
+    background-blend-mode: color;
+}
+
+.subscribe {
+    @include flex (flex-start, center, nowrap, row, 0, 0 auto);
+    min-height: 448px;
+}
+
+.subscribe-info {
+    margin: 0 370px 0 0;
+    @include size (360px);
+}
+
+.subscribe-info-figure {
+    @include flex (center, center, wrap, row, 0, 0);
+}
+
+.subscribe-info-avatar {
+    @include block (0, 0 0 28px 0);
+    width: 96px;
+    height: 96px;
+    @include brd (none, 50%);
+    background-image: url(../img/Intersect.png);
+    @include bcg (none, contain);
+}
+
+.subscribe-info-txt {
+    @include block-txt (block, 0, 0, center);
+    @include font-mix (400, 20px, 24px, none, #222224);
+}
+
+.subscribe-info-txt span {
+    font-style: italic;
+}
+
+.subscribe-info-txt:hover {
+    text-shadow: 0px 3px 3px #9f9f9f;
+}
+
+.subscribe-form-title {
+    @include block-txt (block, 0, 0, center);
+    @include font-mix (700, 24px, 28.8px, uppercase, #222224);
+}
+
+.subscribe-form-subtitle {
+    @include block-txt (block, 0, 0 0 32px 0, center);
+    @include font-mix (400, 18px, 21.6px, uppercase, #222224);
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-form-email {
+    width: 256px;
+    padding: 20px;
+    @include brd (none, 25px 0 0 25px);
+    @include bcg (#e1e1e1, auto);
+    @include font-mix (400, 14px, 16.8px, capitalize, #222224);
+    opacity: 67.1%;
+}
+
+.subscribe-form-btn {
+    width: 100px;
+    @include block-txt (block, 0, 0 auto, center);
+    @include brd (none, 0 25px 25px 0);
+    @include bcg (#f16d7f, auto);
+    color: #ffffff;
+}
+
+.subscribe-form-btn:hover {
+    background-color: #ffffff;
+    color: #f16d7f;
+}
+
+.subscribe-form-btn:active {
+    background-color: #f16d7f;
+    color: #ffffff;
+}
+
+.subscribe-form-email:hover,
+.subscribe-form-btn:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
