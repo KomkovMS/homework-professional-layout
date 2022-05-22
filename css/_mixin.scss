@@ -50,3 +50,9 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+@mixin submit($w, $h, $bcgc) {
+    width: $w;
+    height: $h;
+    background-color: $bcgc;
+}

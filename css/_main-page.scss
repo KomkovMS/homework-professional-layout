@@ -46,14 +46,17 @@
     position: absolute;
     top: -1;
     left: -28px;
+    animation: scale-up-ver-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .banner-title {
     @include font-mix (900, 48px, 58px, uppercase, #222222);
+    animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .banner-subtitle {
     @include font-mix (700, 32px, 38.4px, uppercase, #222222);
+
 }
 
 .banner-subtitle span {

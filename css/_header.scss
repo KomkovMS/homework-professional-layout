@@ -67,6 +67,7 @@
 
 .page-header-search:hover svg {
     fill: #f16d7f;
+    cursor: pointer;
 }
 
 .page-header-search-btn {
@@ -75,6 +76,10 @@
     position: absolute;
     top: -15px;
     left: 40px;
+}
+
+.page-header-search-btn[type="search"]::-webkit-input-placeholder {
+    color: transparent;
 }
 
 .search-btn-svg {
@@ -89,6 +94,11 @@
     transition: width 1s ease;
     background-color: white;
     border: 1px solid #e8e8e8;
+}
+
+.page-header-search-btn[type="search"]:focus::-webkit-input-placeholder {
+    color: #6f6e6e;
+    text-align: center;
 }
 
 .btn {
@@ -125,6 +135,10 @@
     height: 3px;
     background-color: #e8e8e8;
     position: relative;
+}
+
+.menu-btn:hover span {
+    cursor: pointer;
 }
 
 .menu-btn span::before,
@@ -300,4 +314,5 @@
     position: absolute;
     top: -8px;
     right: -9px;
+    animation: pulsate-fwd 0.5s ease-in-out infinite both;
 }

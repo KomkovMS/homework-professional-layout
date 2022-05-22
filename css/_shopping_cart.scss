@@ -1,5 +1,6 @@
 .shopping__cart-header {
     line-height: 148px;
+    animation: tracking-in-expand-fwd-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .shopping-cart {
@@ -98,6 +99,7 @@
 
 .shopping-cart-info ul li span {
     color: #EF5B70;
+    color: #ef5b70;
 }
 
 /**********SHOPPING CART блок SHIPPING ADRESS************/
@@ -142,6 +144,7 @@
     font-size: 13px;
     line-height: 16px;
     color: #B1B1B1;
+    color: #b1b1b1;
 }
 
 .form-other[type="text"]::-webkit-input-placeholder {
@@ -163,6 +166,7 @@
     font-size: 11px;
     line-height: 35px;
     color: #4A4A4A;
+    color: #4a4a4a;
     background: #ffffff;
 }
 
@@ -173,6 +177,7 @@
 
 .input-cart-form-btn input:active {
     background: #4A4A4A;
+    background: #4a4a4a;
     color: #ffffff;
 }
 
@@ -186,6 +191,7 @@
     width: 360px;
     height: 214px;
     background: #F5F3F3;
+    background: #f5f3f3;
 }
 
 .checkout-subtitle {
@@ -196,6 +202,7 @@
     font-size: 11px;
     line-height: 13px;
     color: #4A4A4A;
+    color: #4a4a4a;
     text-transform: uppercase;
 }
 
@@ -208,6 +215,7 @@
     text-align: right;
     margin: 0 43px 17px 0;
     border-bottom: 1px solid #E2E2E2;
+    border-bottom: 1px solid #e2e2e2;
     padding: 0 0 21px 0;
     box-sizing: border-box;
     font-weight: 300;
@@ -221,6 +229,7 @@
     padding: 0 0 0 26px;
     font-weight: 700;
     color: #F16D7F;
+    color: #f16d7f;
 }
 
 /***************SHOPPING CART кнопка слева checkout*********/
@@ -239,6 +248,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+    color: #ffffff;
     background-color: #F16D7F;
     border: none;
 }
@@ -247,11 +257,15 @@
     color: #F16D7F;
     background-color: #FFffff;
     border: 1px solid #F16D7F;
+    color: #f16d7f;
+    background-color: #ffffff;
+    border: 1px solid #f16d7f;
 }
 
 .checkout-btn input:active {
     color: #222222;
     background-color: #FFFFFF;
+    background-color: #ffffff;
     border: 1px solid #222222;
 }
 
@@ -281,4 +295,5 @@
     border: 1px solid rgba(164, 164, 164, 1);
     box-sizing: border-box;
     background-color: #FFFFFF;
+    background-color: #ffffff;
 }

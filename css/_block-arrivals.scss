@@ -11,6 +11,7 @@
 
 .new-arrivals-header {
     @include font-mix (400, 24px, 28.8px, uppercase, #f16d7f);
+    animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .new-arrivals-breadcrumb-nav-ol {
@@ -30,6 +31,7 @@
 .new-arrivals-breadcrumb-item-link {
     text-decoration: none;
     @include font-mix (300, 14px, 16.8px, uppercase, #636363);
+    animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 .new-arrivals-breadcrumb-item-link:hover {
@@ -38,4 +40,5 @@
 
 .new-arrivals-active {
     @include font-mix (700, 14px, 16.8px, uppercase, #f16d7f);
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }

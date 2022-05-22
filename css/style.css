@@ -17,6 +17,204 @@ body {
   margin: 0 auto;
 }
 
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateX(1000px);
+            transform: translateZ(-700px) translateX(1000px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateX(1000px);
+            transform: translateZ(-700px) translateX(1000px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .page-header {
   width: 100%;
   min-height: 75px;
@@ -95,6 +293,7 @@ body {
 
 .page-header-search:hover svg {
   fill: #f16d7f;
+  cursor: pointer;
 }
 
 .page-header-search-btn {
@@ -103,6 +302,10 @@ body {
   position: absolute;
   top: -15px;
   left: 40px;
+}
+
+.page-header-search-btn[type="search"]::-webkit-input-placeholder {
+  color: transparent;
 }
 
 .search-btn-svg {
@@ -118,6 +321,11 @@ body {
   transition: width 1s ease;
   background-color: white;
   border: 1px solid #e8e8e8;
+}
+
+.page-header-search-btn[type="search"]:focus::-webkit-input-placeholder {
+  color: #6f6e6e;
+  text-align: center;
 }
 
 .btn {
@@ -156,6 +364,10 @@ body {
   height: 3px;
   background-color: #e8e8e8;
   position: relative;
+}
+
+.menu-btn:hover span {
+  cursor: pointer;
 }
 
 .menu-btn span::before,
@@ -362,6 +574,8 @@ body {
   position: absolute;
   top: -8px;
   right: -9px;
+  -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+          animation: pulsate-fwd 0.5s ease-in-out infinite both;
 }
 
 /*****************banner**************/
@@ -412,6 +626,8 @@ body {
   position: absolute;
   top: -1;
   left: -28px;
+  -webkit-animation: scale-up-ver-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+          animation: scale-up-ver-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .banner-title {
@@ -420,6 +636,8 @@ body {
   line-height: 58px;
   text-transform: uppercase;
   color: #222222;
+  -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+          animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 .banner-subtitle {
@@ -1590,6 +1808,8 @@ summary::-webkit-details-marker {
   line-height: 28.8px;
   text-transform: uppercase;
   color: #f16d7f;
+  -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+          animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 .new-arrivals-breadcrumb-nav-ol {
@@ -1617,6 +1837,8 @@ summary::-webkit-details-marker {
   line-height: 16.8px;
   text-transform: uppercase;
   color: #636363;
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+          animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .new-arrivals-breadcrumb-item-link:hover {
@@ -1629,6 +1851,8 @@ summary::-webkit-details-marker {
   line-height: 16.8px;
   text-transform: uppercase;
   color: #f16d7f;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+          animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 /***********************carousel***********************/
@@ -1970,6 +2194,8 @@ summary::-webkit-details-marker {
 
 .shopping__cart-header {
   line-height: 148px;
+  -webkit-animation: tracking-in-expand-fwd-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+          animation: tracking-in-expand-fwd-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 .shopping-cart {
@@ -2095,6 +2321,7 @@ summary::-webkit-details-marker {
 
 .shopping-cart-info ul li span {
   color: #EF5B70;
+  color: #ef5b70;
 }
 
 /**********SHOPPING CART блок SHIPPING ADRESS************/
@@ -2144,6 +2371,7 @@ summary::-webkit-details-marker {
   font-size: 13px;
   line-height: 16px;
   color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .form-other[type="text"]::-webkit-input-placeholder {
@@ -2165,6 +2393,7 @@ summary::-webkit-details-marker {
   font-size: 11px;
   line-height: 35px;
   color: #4A4A4A;
+  color: #4a4a4a;
   background: #ffffff;
 }
 
@@ -2175,6 +2404,7 @@ summary::-webkit-details-marker {
 
 .input-cart-form-btn input:active {
   background: #4A4A4A;
+  background: #4a4a4a;
   color: #ffffff;
 }
 
@@ -2194,6 +2424,7 @@ summary::-webkit-details-marker {
   width: 360px;
   height: 214px;
   background: #F5F3F3;
+  background: #f5f3f3;
 }
 
 .checkout-subtitle {
@@ -2204,6 +2435,7 @@ summary::-webkit-details-marker {
   font-size: 11px;
   line-height: 13px;
   color: #4A4A4A;
+  color: #4a4a4a;
   text-transform: uppercase;
 }
 
@@ -2216,6 +2448,7 @@ summary::-webkit-details-marker {
   text-align: right;
   margin: 0 43px 17px 0;
   border-bottom: 1px solid #E2E2E2;
+  border-bottom: 1px solid #e2e2e2;
   padding: 0 0 21px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2230,6 +2463,7 @@ summary::-webkit-details-marker {
   padding: 0 0 0 26px;
   font-weight: 700;
   color: #F16D7F;
+  color: #f16d7f;
 }
 
 /***************SHOPPING CART кнопка слева checkout*********/
@@ -2247,6 +2481,7 @@ summary::-webkit-details-marker {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  color: #ffffff;
   background-color: #F16D7F;
   border: none;
 }
@@ -2255,11 +2490,15 @@ summary::-webkit-details-marker {
   color: #F16D7F;
   background-color: #FFffff;
   border: 1px solid #F16D7F;
+  color: #f16d7f;
+  background-color: #ffffff;
+  border: 1px solid #f16d7f;
 }
 
 .checkout-btn input:active {
   color: #222222;
   background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid #222222;
 }
 
@@ -2294,6 +2533,7 @@ summary::-webkit-details-marker {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .registration {
@@ -2546,5 +2786,7 @@ summary::-webkit-details-marker {
   left: -45px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 /*# sourceMappingURL=style.css.map */
