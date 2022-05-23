@@ -48,14 +48,15 @@
 .page-header-logo img {
     width: 100%;
     height: 100%;
+    transition: filter 1s;
 }
 
 .page-header-logo:hover img {
-    filter: brightness(40%);
+    filter: brightness(50%);
 }
 
 .page-header-logo:active img {
-    filter: brightness(60%);
+    filter: brightness(70%);
 }
 
 .page-header-search {
@@ -280,6 +281,7 @@
 
 .account-icon-btn svg {
     margin: auto;
+    transition: fill 1s;
 }
 
 .account-icon-btn svg:hover {
@@ -296,6 +298,7 @@
 
 .cart-btn svg {
     margin: auto;
+    transition: fill 1s;
 }
 
 .cart-btn svg:hover {

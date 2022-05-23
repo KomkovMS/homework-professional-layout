@@ -22,6 +22,15 @@
     margin: 0 0 72px 0;
 }
 
+.shopping-cart-product-link {
+    height: 306px;
+    transition: filter 1s;
+}
+
+.shopping-cart-product-link:hover {
+    filter: brightness(40%);
+}
+
 .shopping-cart-info {
     background-color: #ffffff;
 }
@@ -84,13 +93,17 @@
     font-size: 22px;
     line-height: 26px;
     color: #575757;
-    border: 1px solid rgba(234, 234, 234, 1);
+    border: 1px solid #eaeaea;
     margin-left: 24px;
+    padding: 0 0 0 15px;
     box-sizing: border-box;
 }
 
 .text-field__input::placeholder {
-    color: #575757;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
 }
 
 .text-field__input:focus {
@@ -151,36 +164,6 @@
     color: #222222;
 }
 
-/***********SHOPPING CART кнопка get a quote**********/
-
-.input-cart-form-btn input {
-    text-transform: uppercase;
-    display: block;
-    width: 101.41px;
-    height: 35px;
-    margin: 0 0 57px 128px;
-    padding: 0 auto;
-    border: 1px solid rgba(164, 164, 164, 1);
-    box-sizing: border-box;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 35px;
-    color: #4A4A4A;
-    color: #4a4a4a;
-    background: #ffffff;
-}
-
-.input-cart-form-btn input:hover {
-    background: #ff6a6a;
-    color: #ffffff;
-}
-
-.input-cart-form-btn input:active {
-    background: #4A4A4A;
-    background: #4a4a4a;
-    color: #ffffff;
-}
-
 /*************SHOPPING CART серый блок с кнопкой checkout**********/
 .checkout {
     display: flex;
@@ -232,68 +215,6 @@
     color: #f16d7f;
 }
 
-/***************SHOPPING CART кнопка слева checkout*********/
-
-.checkout-btn {
-    width: 273px;
-    height: 50px;
-}
-
-.checkout-btn input {
-    display: block;
-    width: 273px;
-    height: 50px;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-    color: #ffffff;
-    background-color: #F16D7F;
-    border: none;
-}
-
-.checkout-btn input:hover {
-    color: #F16D7F;
-    background-color: #FFffff;
-    border: 1px solid #F16D7F;
-    color: #f16d7f;
-    background-color: #ffffff;
-    border: 1px solid #f16d7f;
-}
-
-.checkout-btn input:active {
-    color: #222222;
-    background-color: #FFFFFF;
-    background-color: #ffffff;
-    border: 1px solid #222222;
-}
-
-/**********SHOPPING CART кнопки снизу**********/
-.shopping-btn {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.clear-shoping-cart-btn,
-.continue-shopping-btn {
-    width: 234px;
-    height: 49px;
-}
-
-.clear-shoping-cart-btn>input,
-.continue-shopping-btn input {
-    display: block;
-    width: 234px;
-    height: 49px;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    border: 1px solid rgba(164, 164, 164, 1);
-    box-sizing: border-box;
-    background-color: #FFFFFF;
-    background-color: #ffffff;
+.checkout .checkout-btn {
+    animation: shake-vertical 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }

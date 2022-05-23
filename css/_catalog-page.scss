@@ -103,6 +103,10 @@ summary::-webkit-details-marker {
     fill: #ef5b70;
 }
 
+.filter-list-link:hover {
+    color: #ef5b70;
+}
+
 /***********************product-nav-right***************/
 
 .catalog-item {
@@ -195,6 +199,12 @@ summary::-webkit-details-marker {
     text-transform: uppercase;
 }
 
+.size-trending label:hover,
+.size-size label:hover,
+.size-price label:hover {
+    color: #ef5b70;
+}
+
 .product-value-trending-1[type="checkbox"],
 .product-value-trending-2[type="checkbox"],
 .product-value-trending-3[type="checkbox"],
@@ -267,6 +277,7 @@ summary::-webkit-details-marker {
     color: #ef5b70;
     fill: #ef5b70;
 }
+
 
 /***********add cart***********/
 

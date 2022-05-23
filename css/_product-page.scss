@@ -64,8 +64,10 @@
 }
 
 .carousel-control:active {
-    background: #222222;
-    color: #f16d7f;
+    background: #f16d7f;
+    color: #ffffff;
+    border-radius: 50%;
+    box-sizing: border-box;
 }
 
 #carousel-1:checked~.control-1,
@@ -82,6 +84,7 @@
     width: 100%;
     margin: 0 auto 664px;
     position: relative;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .collection-wrp {
@@ -239,49 +242,6 @@ summary::-webkit-details-marker {
 
 .fa:hover {
     color: #ef5b70;
-}
-
-.add-to-cart-btn {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    width: 212px;
-    height: 48px;
-    line-height: 48px;
-    background-color: #ffffff;
-    border: 1px solid #ff6a6a;
-    box-sizing: border-box;
-    color: #f26376;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19.2px;
-}
-
-/****************btn**************/
-
-.add-to-cart-btn svg {
-    margin: 0 23px 0 23.5px;
-    fill: #ef5b70;
-}
-
-.add-to-cart-btn:hover svg {
-    fill: #ffffff;
-}
-
-.add-to-cart-btn:active svg {
-    fill: #222222;
-}
-
-.add-to-cart-btn:hover {
-    background-color: #ff6a6a;
-    color: #ffffff;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.add-to-cart-btn:active {
-    background-color: #ffffff;
-    border: 1px solid #222222;
-    color: #222222;
 }
 
 /*****************products-cart *************/

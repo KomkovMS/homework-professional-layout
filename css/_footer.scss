@@ -27,6 +27,7 @@ footer {
 
 .page-footer-socials-item svg {
     fill: #000000;
+    transition: fill 1s;
 }
 
 .page-footer-socials-item:hover svg {

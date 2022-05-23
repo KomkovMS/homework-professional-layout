@@ -15,6 +15,16 @@
 
 .advantage-item-icon {
     @include block (0, 0 0 28px 0);
+    fill: #f16d7f;
+    transition: fill 1s ease;
+}
+
+.advantage-item-icon:hover {
+    fill: #ffffff;
+}
+
+.advantage-item-icon:active {
+    fill: #f16d7f;
 }
 
 .advantage-item-title {
