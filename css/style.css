@@ -316,11 +316,11 @@ body {
 }
 
 .menu-sublist-item:hover a {
-  text-decoration: underline;
+  color: #f16d7f;
 }
 
 .menu-sublist-item:active a {
-  text-decoration: none;
+  color: #000000;
 }
 
 .account-icon-btn {
@@ -890,6 +890,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: color;
+  background-position: bottom;
 }
 
 .subscribe {
@@ -2872,10 +2873,10 @@ summary::-webkit-details-marker {
   height: 48px;
   line-height: 48px;
   background-color: #ffffff;
-  border: 1px solid #ff6a6a;
+  border: 1px solid #f16d7f;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #f26376;
+  color: #f16d7f;
   font-weight: 400;
   font-size: 16px;
   line-height: 19.2px;
@@ -2885,7 +2886,7 @@ summary::-webkit-details-marker {
 
 .add-to-cart-btn svg {
   margin: 0 23px 0 23.5px;
-  fill: #ef5b70;
+  fill: #f16d7f;
   -webkit-transition: fill 1s;
   transition: fill 1s;
 }
@@ -2899,7 +2900,7 @@ summary::-webkit-details-marker {
 }
 
 .add-to-cart-btn:hover {
-  background-color: #ff6a6a;
+  background-color: #f16d7f;
   color: #ffffff;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);

@@ -94,9 +94,9 @@
     height: 48px;
     line-height: 48px;
     background-color: #ffffff;
-    border: 1px solid #ff6a6a;
+    border: 1px solid #f16d7f;
     box-sizing: border-box;
-    color: #f26376;
+    color: #f16d7f;
     font-weight: 400;
     font-size: 16px;
     line-height: 19.2px;
@@ -105,7 +105,7 @@
 
 .add-to-cart-btn svg {
     margin: 0 23px 0 23.5px;
-    fill: #ef5b70;
+    fill: #f16d7f;
     transition: fill 1s;
 }
 
@@ -118,7 +118,7 @@
 }
 
 .add-to-cart-btn:hover {
-    background-color: #ff6a6a;
+    background-color: #f16d7f;
     color: #ffffff;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
