@@ -82,20 +82,21 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 0 auto 664px;
-    position: relative;
+    margin: 0 auto 65px;
     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .collection-wrp {
     @include flex (start, center, nowrap, column, 0, 0);
     align-content: center;
-    min-height: 601px;
     width: 100%;
     outline: 1px solid #eaeaea;
-    position: absolute;
-    top: -64px;
     background-color: #ffffff;
+    transform: translateY(-65px);
+}
+
+.collection-wrp .add-to-cart-btn {
+    margin: 0 auto 65px;
 }
 
 .collection-wrp-link {
@@ -205,8 +206,7 @@
 .collection {
     justify-content: center;
     width: 100%;
-    margin: 0 auto 664px;
-    position: relative;
+    margin: 0 auto;
 }
 
 .collection-wrp:hover {

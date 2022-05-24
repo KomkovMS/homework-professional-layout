@@ -1689,8 +1689,7 @@ summary::-webkit-details-marker {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin: 0 auto 664px;
-  position: relative;
+  margin: 0 auto 65px;
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
           animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
@@ -1717,12 +1716,15 @@ summary::-webkit-details-marker {
           box-sizing: border-box;
   -ms-flex-line-pack: center;
       align-content: center;
-  min-height: 601px;
   width: 100%;
   outline: 1px solid #eaeaea;
-  position: absolute;
-  top: -64px;
   background-color: #ffffff;
+  -webkit-transform: translateY(-65px);
+          transform: translateY(-65px);
+}
+
+.collection-wrp .add-to-cart-btn {
+  margin: 0 auto 65px;
 }
 
 .collection-wrp-link {
@@ -1840,8 +1842,7 @@ summary::-webkit-details-marker {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin: 0 auto 664px;
-  position: relative;
+  margin: 0 auto;
 }
 
 .collection-wrp:hover {
