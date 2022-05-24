@@ -1431,6 +1431,12 @@ summary::-webkit-details-marker {
   margin: 0 0 30px 0 !important;
 }
 
+.item-catalog:nth-child(7),
+.item-catalog:nth-child(8),
+.item-catalog:nth-child(9) {
+  margin: 0 0 0 0 !important;
+}
+
 /****************pagination-bottom************/
 .pagination {
   display: -webkit-box;
@@ -1449,7 +1455,7 @@ summary::-webkit-details-marker {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 0;
-  margin: 0 auto 96px;
+  margin: 48px auto 96px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2089,11 +2095,11 @@ summary::-webkit-details-marker {
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
-  color: #B1B1B1;
   color: #b1b1b1;
 }
 
-.form-other[type="text"]::-webkit-input-placeholder {
+.form-other[type="text"]::-webkit-input-placeholder,
+.input-cart-form[type="number"]::-webkit-input-placeholder {
   color: #222222;
 }
 
@@ -2778,8 +2784,8 @@ summary::-webkit-details-marker {
 }
 
 .products-flex-cart-link:hover {
-  -webkit-box-shadow: 0 0 10px #fff;
-          box-shadow: 0 0 10px #fff;
+  -webkit-box-shadow: 0 0 10px #ffffff;
+          box-shadow: 0 0 10px #ffffff;
 }
 
 .products-flex-cart-link:active {
@@ -2961,14 +2967,21 @@ summary::-webkit-details-marker {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
-  background-color: #F16D7F;
+  background-color: #F16d7f;
   border: none;
 }
 
 .checkout-btn input:hover {
+  color: #ffffff;
+  background-color: #f16d7f;
+  border: 1px solid #f16d7f;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.checkout-btn-2 input:hover {
   color: #f16d7f;
   background-color: #ffffff;
-  border: 1px solid #f16d7f;
 }
 
 .checkout-btn input:active {
@@ -3007,7 +3020,6 @@ summary::-webkit-details-marker {
   border: 1px solid #a4a4a4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #FFFFFF;
   background-color: #ffffff;
 }
 
@@ -3040,7 +3052,7 @@ summary::-webkit-details-marker {
 }
 
 .registration-btn:hover svg {
-  fill: #F16D7F;
+  fill: #f16d7f;
 }
 
 .registration-btn:active svg {

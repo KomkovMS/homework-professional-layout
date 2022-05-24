@@ -289,10 +289,16 @@ summary::-webkit-details-marker {
     margin: 0 0 30px 0 !important;
 }
 
+.item-catalog:nth-child(7),
+.item-catalog:nth-child(8),
+.item-catalog:nth-child(9) {
+    margin: 0 0 0 0 !important;
+}
+
 /****************pagination-bottom************/
 
 .pagination {
-    @include flex (center, center, nowrap, row, 0, 0 auto 96px);
+    @include flex (center, center, nowrap, row, 0, 48px auto 96px);
 }
 
 .pagination-bottom-list {
