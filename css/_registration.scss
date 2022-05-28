@@ -156,41 +156,6 @@
     margin: 0 0 39px 0;
 }
 
-/********Registration page - Стилизация кнопки *********/
-
-.registration-btn {
-    display: block;
-    position: relative;
-}
-
-.registration-btn input {
-    display: block;
-    text-align: left;
-    padding: 0 0 0 29px;
-    width: 167px;
-    height: 50px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 50px;
-    box-sizing: border-box;
-}
-
-.reg-btn-svg {
-    position: absolute;
-    top: 20px;
-    left: 118px;
-    fill: #ffffff;
-    box-sizing: border-box;
-}
-
-.registration-btn:hover svg {
-    fill: #F16D7F;
-}
-
-.registration-btn:active svg {
-    fill: #222222;
-}
-
 /********Registration page - Стилизация loyalty has its perks*********/
 
 .loyalty {
@@ -240,4 +205,5 @@
     top: 7px;
     left: -45px;
     box-sizing: border-box;
+    animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }

@@ -21,7 +21,7 @@
                     <img src="img/logo.png" alt="logo" height="38">
                 </a>
                 <form action="catalog.html" class="page-header-search">
-                    <input class="page-header-search-btn" id="search-btn" type="search">
+                    <input class="page-header-search-btn" id="search-btn" type="search" placeholder="for men">
                     <label for="search-btn">
                         <svg class="search-btn-svg" width="27" height="28" viewBox="0 0 27 28"
                             xmlns="http://www.w3.org/2000/svg">
@@ -128,9 +128,9 @@
             </div>
         </div>
     </header>
-    <main class="content">
+    <div class="content">
         <div class="content-arrivals">
-            <section class="new-arrivals center">
+            <header class="new-arrivals center">
                 <h1 class="new-arrivals-header">new arrivals</h1>
                 <nav aria-label="new-arrivals-breadcrumb-nav">
                     <ol class="new-arrivals-breadcrumb-nav-ol">
@@ -138,7 +138,7 @@
                                 href="index.html">home</a></li>
                         <li><span>/</span></li>
                         <li class="new-arrivals-breadcrumb-item"><a class="new-arrivals-breadcrumb-item-link"
-                                href="#">men</a>
+                                href="catalog.html">men</a>
                         </li>
                         <li><span>/</span></li>
                         <li class="new-arrivals-breadcrumb-item new-arrivals-active" aria-current="page">new
@@ -146,7 +146,7 @@
                         </li>
                     </ol>
                 </nav>
-            </section>
+            </header>
         </div>
         <div class="carousel ">
             <div class="carousel-inner center">
@@ -191,50 +191,52 @@
                 </p>
                 <p class="collection-wrp-price">$561</p>
                 <span class="collection-wrp-line-bottom"></span>
-                <div class="collection-wrp-nav">
-                    <details>
-                        <summary class="collection-wrp-nav-choice">
-                            choose color <i class="fa fa-solid fa-chevron-down"></i>
-                        </summary>
-                        <fieldset class="collection-choice-list-dl">
-                            <label for="color"></label>
-                            <input id="color" list="dl_color" placeholder="white" type="text"
+                <form action="shopping__cart.html">
+                    <div class="collection-wrp-nav">
+                        <details>
+                            <summary class="collection-wrp-nav-choice">
+                                choose color <i class="fa fa-solid fa-chevron-down"></i>
+                            </summary>
+                            <fieldset class="collection-choice-list-dl">
+                                <label for="color"></label>
+                                <input id="color" list="dl_color" placeholder="white" type="text"
+                                    class="collection-choice-list">
+                            </fieldset>
+                            <datalist id="dl_color" class="collection-choice-list-data">
+                                <option label="black" value="black"></option>
+                                <option label="white" value="white"></option>
+                                <option label="yellow" value="yellow"></option>
+                                <option label="green" value="green"></option>
+                                <option label="red" value="red"></option>
+                                <option label="blue" value="blue"></option>
+                            </datalist>
+                        </details>
+                        <details>
+                            <summary class="collection-wrp-nav-choice">choose size<i
+                                    class="fa fa-solid fa-chevron-down"></i></summary>
+                            <fieldset class="collection-choice-list-dl collection-choice-list-center">
+                                <label for="size"></label>
+                                <input id="size" list="dl_size" type="text" placeholder="xl"
+                                    class="collection-choice-list">
+                            </fieldset>
+                            <datalist id="dl_size" class="collection-choice-list-data">
+                                <option label="xs" value="xs"></option>
+                                <option label="s" value="s"></option>
+                                <option label="m" value="m"></option>
+                                <option label="l" value="l"></option>
+                                <option label="xl" value="xl"></option>
+                                <option label="xxl" value="xxl"></option>
+                            </datalist>
+                        </details>
+                        <details>
+                            <summary class="collection-wrp-nav-choice">quantity<i
+                                    class="fa fa-solid fa-chevron-down"></i>
+                            </summary>
+                            <label for="number"></label>
+                            <input id="number" type="number" max="10" min="1" placeholder="1"
                                 class="collection-choice-list">
-                        </fieldset>
-                        <datalist id="dl_color" class="collection-choice-list-data">
-                            <option label="black" value="black"></option>
-                            <option label="white" value="white"></option>
-                            <option label="yellow" value="yellow"></option>
-                            <option label="green" value="green"></option>
-                            <option label="red" value="red"></option>
-                            <option label="blue" value="blue"></option>
-                        </datalist>
-                    </details>
-                    <details>
-                        <summary class="collection-wrp-nav-choice">choose size<i
-                                class="fa fa-solid fa-chevron-down"></i></summary>
-                        <fieldset class="collection-choice-list-dl collection-choice-list-center">
-                            <label for="size"></label>
-                            <input id="size" list="dl_size" type="text" placeholder="xl" class="collection-choice-list">
-                        </fieldset>
-                        <datalist id="dl_size" class="collection-choice-list-data">
-                            <option label="xs" value="xs"></option>
-                            <option label="s" value="s"></option>
-                            <option label="m" value="m"></option>
-                            <option label="l" value="l"></option>
-                            <option label="xl" value="xl"></option>
-                            <option label="xxl" value="xxl"></option>
-                        </datalist>
-                    </details>
-                    <details>
-                        <summary class="collection-wrp-nav-choice">quantity<i class="fa fa-solid fa-chevron-down"></i>
-                        </summary>
-                        <label for="number"></label>
-                        <input id="number" type="number" max="10" min="1" placeholder="1"
-                            class="collection-choice-list">
-                    </details>
-                </div>
-                <form action="#">
+                        </details>
+                    </div>
                     <button class="add-to-cart-btn">
                         <svg class="add-to-cart-btn-cart-svg" width="27" height="25" viewBox="0 0 27 25"
                             xmlns="http://www.w3.org/2000/svg">
@@ -250,7 +252,7 @@
             <section class="products center">
                 <div class="products-flex">
                     <div class="products-flex-item item-prod">
-                        <a class="products-flex-item-link" href="#">
+                        <a class="products-flex-item-link" href="product.html">
                             <img class="products-item-pic" src="img/products-4.png" alt="продукция" height="420">
                             <div class="products-txt-box">
                                 <h4 class="products-txt-box-title">ellery x m'o capsule</h4>
@@ -262,7 +264,7 @@
                             </div>
                         </a>
                         <div class="products-flex-cart">
-                            <a class="products-flex-cart-link" href="">
+                            <a class="products-flex-cart-link" href="#">
                                 <!-- <img src="img/cart.png" alt="cart"> -->
                                 <svg width="27" height="25" viewBox="0 0 27 25" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -273,7 +275,7 @@
                         </div>
                     </div>
                     <div class="products-flex-item item-prod">
-                        <a class="products-flex-item-link" href="#">
+                        <a class="products-flex-item-link" href="product.html">
                             <img class="products-item-pic" src="img/products-3.png" alt="продукция" height="420">
                             <div class="products-txt-box">
                                 <h4 class="products-txt-box-title">ellery x m'o capsule</h4>
@@ -285,7 +287,7 @@
                             </div>
                         </a>
                         <div class="products-flex-cart">
-                            <a class="products-flex-cart-link" href="">
+                            <a class="products-flex-cart-link" href="#">
                                 <!-- <img src="img/cart.png" alt="cart"> -->
                                 <svg width="27" height="25" viewBox="0 0 27 25" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -296,7 +298,7 @@
                         </div>
                     </div>
                     <div class="products-flex-item item-prod">
-                        <a class="products-flex-item-link" href="#">
+                        <a class="products-flex-item-link" href="product.html">
                             <img class="products-item-pic" src="img/products-6.png" alt="продукция" height="420">
                             <div class="products-txt-box">
                                 <h4 class="products-txt-box-title">ellery x m'o capsule</h4>
@@ -308,7 +310,7 @@
                             </div>
                         </a>
                         <div class="products-flex-cart">
-                            <a class="products-flex-cart-link" href="">
+                            <a class="products-flex-cart-link" href="#">
                                 <!-- <img src="img/cart.png" alt="cart"> -->
                                 <svg width="27" height="25" viewBox="0 0 27 25" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -322,7 +324,7 @@
             </section>
         </div>
 
-    </main>
+    </div>
     <footer>
         <div class="content-subscrible">
             <section class="subscribe center">
@@ -353,13 +355,13 @@
         <div class="page-footer center">
             <p class="page-footer-txt">&copy; 2021 brand all rights reserved.</p>
             <address class="page-footer-socials">
-                <a href="#" class="page-footer-socials-item">
+                <a href="https://ru-ru.facebook.com/" target="_blank" class="page-footer-socials-item">
                     <svg width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15848 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z" />
                     </svg>
                 </a>
-                <a href="#" class="page-footer-socials-item">
+                <a href="https://www.instagram.com/" target="_blank" class="page-footer-socials-item">
                     <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_128_234)">
                             <path
@@ -372,7 +374,7 @@
                         </defs>
                     </svg>
                 </a>
-                <a href="#" class="page-footer-socials-item">
+                <a href="https://www.pinterest.ru/" target="_blank" class="page-footer-socials-item">
                     <svg width="13" height="16" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_128_242)">
                             <path
@@ -385,7 +387,7 @@
                         </defs>
                     </svg>
                 </a>
-                <a href="#" class="page-footer-socials-item">
+                <a href="https://twitter.com/?lang=ru" target="_blank" class="page-footer-socials-item">
                     <svg width="17" height="16" viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_128_238)">
                             <path

@@ -1,0 +1,264 @@
+/****************button cart main-page & catalog page & product page**************/
+.products-flex-cart {
+    display: none;
+    position: absolute;
+    top: 188px;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+}
+
+.products-flex-cart-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #ffffff;
+    pointer-events: all;
+}
+
+.products-flex-cart-link svg {
+    fill: #ffffff;
+}
+
+.products-flex-cart-link:hover {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.products-flex-cart-link:active {
+    border: #f16d7f;
+    box-shadow: 0 0 10px rgba(241, 109, 127, 1);
+}
+
+.products-flex-cart-link:active svg {
+    fill: #f16d7f;
+}
+
+.products-flex-cart-txt:active {
+    color: #f16d7f;
+}
+
+.products-flex-item:hover .products-flex-cart {
+    display: flex;
+}
+
+.products-flex-cart-txt {
+    margin: 0 0 0 10px;
+    @include font-mix(400, 14px, 17px, capitalize, #ffffff);
+}
+
+.products-flex-cart-txt span {
+    text-transform: none;
+}
+
+/****************button bottom main-page*****************/
+.products-btn {
+    display: flex;
+    margin: 0 auto;
+    width: 212px;
+    min-height: 48px;
+    background-color: #ffffff;
+    border: 1px solid #ff6a6a;
+    box-sizing: border-box;
+    text-decoration: none;
+    @include font-mix(400, 16px, 19.2px, capitalize, #f26376);
+    transition: background-color 1s;
+    transition: color 1s;
+    transition: box-shadow 1s;
+}
+
+.products-btn-txt {
+    display: block;
+    margin: auto;
+}
+
+.products-btn:hover {
+    background-color: #ff6a6a;
+    color: #ffffff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.products-btn:active {
+    background-color: #ffffff;
+    border: 1px solid #222222;
+    color: #222222;
+}
+
+/****************button product-page**************/
+
+.add-to-cart-btn {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 212px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #ffffff;
+    border: 1px solid #f16d7f;
+    box-sizing: border-box;
+    color: #f16d7f;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    transition: all 1s;
+}
+
+.add-to-cart-btn svg {
+    margin: 0 23px 0 23.5px;
+    fill: #f16d7f;
+    transition: fill 1s;
+}
+
+.add-to-cart-btn:hover svg {
+    fill: #ffffff;
+}
+
+.add-to-cart-btn:active svg {
+    fill: #222222;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #f16d7f;
+    color: #ffffff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.add-to-cart-btn:active {
+    background-color: #ffffff;
+    border: 1px solid #222222;
+    color: #222222;
+}
+
+/***********SHOPPING CART кнопка get a quote**********/
+
+.input-cart-form-btn input {
+    text-transform: uppercase;
+    display: block;
+    width: 101.41px;
+    height: 35px;
+    margin: 0 0 57px 128px;
+    padding: 0 auto;
+    border: 1px solid rgba(164, 164, 164, 1);
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 35px;
+    color: #4a4a4a;
+    background: #ffffff;
+}
+
+.input-cart-form-btn input:hover {
+    background: #ff6a6a;
+    color: #ffffff;
+}
+
+.input-cart-form-btn input:active {
+    background: #4a4a4a;
+    color: #ffffff;
+}
+
+
+/***************SHOPPING CART кнопка слева checkout*********/
+
+.checkout-btn {
+    width: 273px;
+    height: 50px;
+}
+
+.shopping-btn .checkout-btn {
+    animation: jello-horizontal 0.9s both;
+}
+
+.checkout-btn input {
+    display: block;
+    width: 273px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    background-color: #F16d7f;
+    border: none;
+}
+
+.checkout-btn input:hover {
+    color: #ffffff;
+    background-color: #f16d7f;
+    border: 1px solid #f16d7f;
+    box-sizing: border-box;
+}
+
+.checkout-btn-2 input:hover {
+    color: #f16d7f;
+    background-color: #ffffff;
+}
+
+.checkout-btn input:active {
+    color: #222222;
+    background-color: #ffffff;
+    border: 1px solid #222222;
+}
+
+/**********SHOPPING CART кнопки снизу**********/
+.shopping-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.clear-shoping-cart-btn,
+.continue-shopping-btn {
+    width: 234px;
+    height: 49px;
+}
+
+.clear-shoping-cart-btn>input,
+.continue-shopping-btn input {
+    display: block;
+    width: 234px;
+    height: 49px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    border: 1px solid rgba(164, 164, 164, 1);
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+/********************registration page*********************/
+
+.registration-btn {
+    display: block;
+    position: relative;
+}
+
+.registration-btn input {
+    display: block;
+    text-align: left;
+    padding: 0 0 0 29px;
+    width: 167px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+
+.reg-btn-svg {
+    position: absolute;
+    top: 20px;
+    left: 118px;
+    fill: #ffffff;
+    box-sizing: border-box;
+}
+
+.registration-btn:hover svg {
+    fill: #f16d7f;
+}
+
+.registration-btn:active svg {
+    fill: #222222;
+}
