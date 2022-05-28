@@ -41,3 +41,23 @@ footer {
 .page-footer-socials-item:active svg {
     fill: #ffffff;
 }
+
+@media (max-width: 768px) {
+    .page-footer {
+        padding: 0 32px;
+    }
+}
+
+@media (max-width: 375px) {
+    .page-footer {
+        flex-direction: column-reverse;
+    }
+
+    .page-footer-socials {
+        margin: 43px auto 40px;
+    }
+
+    .page-footer-txt {
+        padding: 9px;
+    }
+}
