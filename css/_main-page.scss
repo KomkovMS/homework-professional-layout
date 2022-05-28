@@ -244,12 +244,6 @@
     @include font-mix(400, 16px, 19.2px, none, #f16d7f);
 }
 
-// @media (max-width: 1600px) {
-//     .center {
-//         padding: 0 2%;
-//     }
-// }
-
 @media (max-width: 1200px) {
 
     .categories-wrp,
@@ -257,12 +251,6 @@
         margin: 0 2%;
     }
 }
-
-// @media (max-width: 900px) {
-//     .products-item-pic {
-//         height: 90%;
-//     }
-// }
 
 @media (max-width: 768px) {
 
@@ -345,7 +333,7 @@
 @media (max-width: 650px) {
     .banner {
         background-image: none;
-        margin-left: 5%;
+        // margin-left: 5%;
     }
 
     .banner-header {
