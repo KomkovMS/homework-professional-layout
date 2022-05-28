@@ -735,8 +735,10 @@ body {
   .products-flex-item:nth-child(4) {
     margin-bottom: 15px;
   }
+  .products-flex-item:nth-child(2),
+  .products-flex-item:nth-child(4),
   .products-flex-item:nth-child(6) {
-    margin-right: 1%;
+    margin-right: 0;
   }
   .banner-header::before {
     top: -5px;
