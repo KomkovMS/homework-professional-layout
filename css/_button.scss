@@ -233,6 +233,7 @@
 .registration-btn {
     display: block;
     position: relative;
+
 }
 
 .registration-btn input {
@@ -245,6 +246,8 @@
     font-size: 14px;
     line-height: 50px;
     box-sizing: border-box;
+    transition: background-color 0.8s;
+    transition: color 0.8s;
 }
 
 .reg-btn-svg {
@@ -253,6 +256,7 @@
     left: 118px;
     fill: #ffffff;
     box-sizing: border-box;
+    transition: fill 0.8s;
 }
 
 .registration-btn:hover svg {

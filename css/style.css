@@ -1094,24 +1094,28 @@ footer {
   width: 32px;
   height: 32px;
   background-color: #ffffff;
+  -webkit-transition: background-color 0.8s;
+  transition: background-color 0.8s;
 }
 
 .page-footer-socials-item svg {
   fill: #000000;
-  -webkit-transition: fill 1s;
-  transition: fill 1s;
+  -webkit-transition: fill 0.8s;
+  transition: fill 0.8s;
 }
 
 .page-footer-socials-item:hover svg {
-  fill: #f16d7f;
+  fill: #ffffff;
 }
 
-.page-footer-socials-item:active {
+.page-footer-socials-item:hover {
   background-color: #f16d7f;
 }
 
-.page-footer-socials-item:active svg {
-  fill: #ffffff;
+.page-footer-socials-item:active svg,
+.page-footer-socials-item:active {
+  background-color: #ffffff;
+  fill: #f16d7f;
 }
 
 @media (max-width: 768px) {
@@ -1309,6 +1313,10 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   color: #ffffff;
+  -webkit-transition: background-color 0.8s;
+  transition: background-color 0.8s;
+  -webkit-transition: color 0.8s;
+  transition: color 0.8s;
 }
 
 .subscribe-form-btn:hover {
@@ -3351,6 +3359,10 @@ summary::-webkit-details-marker {
   line-height: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: background-color 0.8s;
+  transition: background-color 0.8s;
+  -webkit-transition: color 0.8s;
+  transition: color 0.8s;
 }
 
 .reg-btn-svg {
@@ -3360,6 +3372,8 @@ summary::-webkit-details-marker {
   fill: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: fill 0.8s;
+  transition: fill 0.8s;
 }
 
 .registration-btn:hover svg {
