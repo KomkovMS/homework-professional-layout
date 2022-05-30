@@ -36,7 +36,6 @@
     font-size: 16px;
     line-height: 19px;
     color: #222222;
-    width: 360px;
 }
 
 .first-name,
@@ -159,7 +158,7 @@
 /********Registration page - Стилизация loyalty has its perks*********/
 
 .loyalty {
-    padding: 0 0 0 128px;
+    padding: 0 2% 0 11%;
     box-sizing: border-box;
 }
 
@@ -179,7 +178,7 @@
 
 .loyalty-txt {
     margin: 22px 0 21px 0;
-    width: 94%;
+    width: 95%;
     text-align: justify;
 }
 
@@ -206,4 +205,67 @@
     left: -45px;
     box-sizing: border-box;
     animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@media (max-width: 1200px) {
+
+    .new-arrivals {
+        margin: 0 2%;
+    }
+
+    .registration {
+        margin: 40px 2% 96px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .loyalty {
+        padding: 0 2% 0 4%;
+    }
+
+    .loyalty-header,
+    .loyalty-txt,
+    .loyalty-list {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .loyalty-item::after {
+        top: 0px;
+    }
+}
+
+@media (max-width: 635px) {
+
+    .new-arrivals {
+        justify-content: center;
+    }
+
+    .shopping-cart {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .loyalty {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .first-name,
+    .first-name-txt,
+    .last-name,
+    .last-name-txt,
+    .gender,
+    .e-mail,
+    .e-mail-txt,
+    .password,
+    .password-txt,
+    .psw-info {
+        max-width: 360px;
+        width: 100%;
+    }
 }
