@@ -70,6 +70,8 @@
     @include brd (none, 0 25px 25px 0);
     @include bcg (#f16d7f, auto);
     color: #ffffff;
+    transition: background-color 0.8s;
+    transition: color 0.8s;
 }
 
 .subscribe-form-btn:hover {
@@ -120,7 +122,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 381px) {
     .subscribe {
         min-height: 550x;
     }

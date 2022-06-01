@@ -23,23 +23,27 @@ footer {
     width: 32px;
     height: 32px;
     background-color: #ffffff;
+    transition: background-color 0.8s;
 }
 
 .page-footer-socials-item svg {
     fill: #000000;
-    transition: fill 1s;
+    transition: fill 0.8s;
+
 }
 
 .page-footer-socials-item:hover svg {
-    fill: #f16d7f;
+    fill: #ffffff;
 }
 
-.page-footer-socials-item:active {
+.page-footer-socials-item:hover {
     background-color: #f16d7f;
 }
 
-.page-footer-socials-item:active svg {
-    fill: #ffffff;
+.page-footer-socials-item:active svg,
+.page-footer-socials-item:active {
+    background-color: #ffffff;
+    fill: #f16d7f;
 }
 
 @media (max-width: 768px) {
@@ -48,7 +52,7 @@ footer {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 381px) {
     .page-footer {
         flex-direction: column-reverse;
     }
